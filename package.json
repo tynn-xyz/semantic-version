@@ -1,7 +1,7 @@
 {
-  "name": "javascript-action",
+  "name": "semantic-version-action",
   "version": "1.0.0",
-  "description": "JavaScript Action Template",
+  "description": "SemVer parser Action for generic versioning",
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
@@ -11,21 +11,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/javascript-action.git"
+    "url": "git+https://github.com/tynn-xyz/semantic-version.git"
   },
   "keywords": [
     "GitHub",
     "Actions",
-    "JavaScript"
+    "SemVer"
   ],
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/actions/javascript-action/issues"
+    "url": "https://github.com/tynn-xyz/semantic-version/issues"
   },
-  "homepage": "https://github.com/actions/javascript-action#readme",
+  "homepage": "https://github.com/tynn-xyz/semantic-version#readme",
   "dependencies": {
-    "@actions/core": "^1.2.5"
+    "@actions/core": "^1.2.5",
+    "semver": "^7.3.2"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.25.1",

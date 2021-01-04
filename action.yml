@@ -1,13 +1,12 @@
-name: 'Wait'
-description: 'Wait a designated number of milliseconds'
+name: 'SemVer'
+description: 'Coerce a string including version information to a semantic version'
 inputs:
-  milliseconds:  # id of input
-    description: 'number of milliseconds to wait'
+  versioning:
+    description: 'The string including the version to coerce'
     required: true
-    default: '1000'
 outputs:
-  time: # output will be available to future steps
-    description: 'The message to output'
+  version:
+    description: 'The semantic version from versioning'
 runs:
   using: 'node12'
   main: 'dist/index.js'

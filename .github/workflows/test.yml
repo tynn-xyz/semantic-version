@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      - 'releases/*'
+      - dev
 
 jobs:
   # unit tests
@@ -20,6 +20,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: ./
+    - name: Run SemVer action
+      uses: ./
       with:
-        milliseconds: 1000
+        versioning: 'v1'
+      id: semver
+    - name: Handle incorrect version input
+      if: ${{ steps.semver.outputs.version != '1.0.0' }}
+      run: |
+        echo expected 1.0.0 but got ${{ steps.semver.outputs.version }}
+        exit 1
