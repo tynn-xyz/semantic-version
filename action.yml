@@ -6,7 +6,7 @@ inputs:
     required: true
 outputs:
   version:
-    description: 'The semantic version from versioning'
+    description: 'The semantic version extracted from versioning'
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'dist/index.js'

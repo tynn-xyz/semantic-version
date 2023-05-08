@@ -1,5 +1,5 @@
 # Hello world javascript action
-[![units-test][units-test-badge]][units-test]
+[![Test][test-badge]][test]
 
 This action provides a semantic version from a raw version input.
 
@@ -23,5 +23,5 @@ with:
   versioning: 'v1'
 ```
 
-  [units-test]: https://github.com/tynn-xyz/semantic-version/actions
-  [units-test-badge]: https://github.com/tynn-xyz/semantic-version/workflows/units-test/badge.svg
+  [test]: https://github.com/tynn-xyz/semantic-version/actions
+  [utest-badge]: https://github.com/tynn-xyz/semantic-version/workflows/Test/badge.svg

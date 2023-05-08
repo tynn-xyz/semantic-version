@@ -1,6 +1,6 @@
 {
   "name": "semantic-version-action",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "SemVer parser Action for generic versioning",
   "main": "index.js",
   "scripts": {
@@ -16,21 +16,23 @@
   "keywords": [
     "GitHub",
     "Actions",
-    "SemVer"
+    "SemVer",
+    "Utility",
+    "Versioning"
   ],
-  "author": "",
+  "author": "Christian Schmitz <christian@tynn.xyz>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/tynn-xyz/semantic-version/issues"
   },
   "homepage": "https://github.com/tynn-xyz/semantic-version#readme",
   "dependencies": {
-    "@actions/core": "^1.2.5",
-    "semver": "^7.3.2"
+    "@actions/core": "^1.10.0",
+    "semver": "^7.5.0"
   },
   "devDependencies": {
-    "@vercel/ncc": "^0.25.1",
-    "eslint": "^7.4.0",
-    "jest": "^26.1.0"
+    "@vercel/ncc": "^0.36.1",
+    "eslint": "^8.40.0",
+    "jest": "^29.5.0"
   }
 }
