@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/tynn-xyz/semantic-version#readme",
   "dependencies": {
-    "@actions/core": "^1.11.1",
+    "@actions/core": "^2.0.2",
     "semver": "^7.7.3"
   },
   "devDependencies": {
